@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-20T18:27:56.422530" rpa="false" schemaversion="5">
+<suite id="s1" name="CheckOutLab" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\Selenium\CheckOutLab.robot">
+<test id="s1-t1" name="Adding products to cart" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:27:57.764723" level="INFO">Opening browser 'chrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T18:27:57.763355" elapsed="5.152830"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-20T18:28:02.920332" elapsed="28.714089"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket'])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T18:28:31.667572" elapsed="0.843915"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:28:32.534381" level="INFO">Clicking element 'xpath:(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket'])[1]'.</msg>
+<arg>xpath:(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:28:32.520196" elapsed="1.945552"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@class,"added_to_cart")]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T18:28:34.473067" elapsed="0.137226"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@class,"added_to_cart")]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T18:28:34.625766" elapsed="0.579569"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:28:35.212335" level="INFO">Clicking element 'xpath=//a[contains(@class,"added_to_cart")]'.</msg>
+<msg time="2026-02-20T18:28:37.203891" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-20T18:28:37.236784" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://practice.automationtesting.in/basket/" class="added_to_cart wc-forward" title="..."&gt;View Basket&lt;/a&gt; is not clickable at point (367, 599). Other element would receive the click: &lt;iframe id="aswift_11" name="aswift_11" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=12&amp;amp;uci=a!c&amp;amp;btvi=11" data-google-container-id="a!c" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKTqm8eP6JIDFd0PdgYdFFEqKA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff751514435
+	0x7ff751514490
+	0x7ff7512ad49d
+	0x7ff751310845
+	0x7ff75130df5a
+	0x7ff75130ade5
+	0x7ff751309c97
+	0x7ff7512fb1c6
+	0x7ff7513317ca
+	0x7ff7512faa46
+	0x7ff751355728
+	0x7ff7512f8e38
+	0x7ff7512f9d23
+	0x7ff7517e3b30
+	0x7ff7517de3b8
+	0x7ff7517fe72a
+	0x7ff7515307e5
+	0x7ff75153978c
+	0x7ff75151d794
+	0x7ff75151d946
+	0x7ff751503457
+	0x7ffe83227374
+	0x7ffe843dcc91
+</msg>
+<arg>xpath=//a[contains(@class,"added_to_cart")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-20T18:28:35.209125" elapsed="2.220959">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://practice.automationtesting.in/basket/" class="added_to_cart wc-forward" title="..."&gt;View Basket&lt;/a&gt; is not clickable at point (367, 599). Other element would receive the click: &lt;iframe id="aswift_11" name="aswift_11" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=12&amp;amp;uci=a!c&amp;amp;btvi=11" data-google-container-id="a!c" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKTqm8eP6JIDFd0PdgYdFFEqKA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+    [ Message content over the limit has been removed. ]
+	0x7ff751310845
+	0x7ff75130df5a
+	0x7ff75130ade5
+	0x7ff751309c97
+	0x7ff7512fb1c6
+	0x7ff7513317ca
+	0x7ff7512faa46
+	0x7ff751355728
+	0x7ff7512f8e38
+	0x7ff7512f9d23
+	0x7ff7517e3b30
+	0x7ff7517de3b8
+	0x7ff7517fe72a
+	0x7ff7515307e5
+	0x7ff75153978c
+	0x7ff75151d794
+	0x7ff75151d946
+	0x7ff751503457
+	0x7ffe83227374
+	0x7ffe843dcc91</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-20T18:28:37.453584" elapsed="0.000177"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-20T18:28:37.459579" elapsed="0.000128"/>
+</kw>
+<status status="FAIL" start="2026-02-20T18:27:57.761670" elapsed="39.734465">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://practice.automationtesting.in/basket/" class="added_to_cart wc-forward" title="..."&gt;View Basket&lt;/a&gt; is not clickable at point (367, 599). Other element would receive the click: &lt;iframe id="aswift_11" name="aswift_11" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260218/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=12&amp;amp;uci=a!c&amp;amp;btvi=11" data-google-container-id="a!c" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKTqm8eP6JIDFd0PdgYdFFEqKA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.110); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+    [ Message content over the limit has been removed. ]
+	0x7ff751310845
+	0x7ff75130df5a
+	0x7ff75130ade5
+	0x7ff751309c97
+	0x7ff7512fb1c6
+	0x7ff7513317ca
+	0x7ff7512faa46
+	0x7ff751355728
+	0x7ff7512f8e38
+	0x7ff7512f9d23
+	0x7ff7517e3b30
+	0x7ff7517de3b8
+	0x7ff7517fe72a
+	0x7ff7515307e5
+	0x7ff75153978c
+	0x7ff75151d794
+	0x7ff75151d946
+	0x7ff751503457
+	0x7ffe83227374
+	0x7ffe843dcc91</status>
+</test>
+<status status="FAIL" start="2026-02-20T18:27:56.428137" elapsed="41.132916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="CheckOutLab" id="s1" pass="0" fail="1" skip="0">CheckOutLab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
