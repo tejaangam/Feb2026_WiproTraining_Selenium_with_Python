@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-21T15:50:19.059065" rpa="false" schemaversion="5">
+<suite id="s1" name="Personaldetails" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\test\personaldetails.robot">
+<test id="s1-t1" name="TC_03 Modify First Name With Valid Data" line="9">
+<kw name="Open Browser To Login Page" owner="common_keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:50:20.714709" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T15:50:20.713999" elapsed="19.846992"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T15:50:40.562555" elapsed="0.079341"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-02-21T15:50:40.647788" elapsed="0.024933"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:50:20.711151" elapsed="19.961831"/>
+</kw>
+<kw name="Given User logs into the system">
+<kw name="Enter Username" owner="LoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:50:40.717895" level="INFO">Typing text 'Admin' into text field 'xpath://input[@placeholder='Username']'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:50:40.708655" elapsed="4.614191"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<status status="PASS" start="2026-02-21T15:50:40.705666" elapsed="4.617824"/>
+</kw>
+<kw name="Enter Password" owner="LoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:50:45.326704" level="INFO">Typing text 'admin123' into text field 'xpath://input[@placeholder='Password']'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:50:45.325704" elapsed="0.356739"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2026-02-21T15:50:45.324340" elapsed="0.358432"/>
+</kw>
+<kw name="Click login Button" owner="LoginPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:50:45.684504" level="INFO">Clicking button 'xpath://button[normalize-space()='Login']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:50:45.683855" elapsed="0.526538"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:50:45.683216" elapsed="0.527608"/>
+</kw>
+<kw name="Verify Successful Login" owner="LoginPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-21T15:50:46.212499" elapsed="30.917204"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:50:46.211630" elapsed="30.918417"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:50:40.701661" elapsed="36.428580"/>
+</kw>
+<kw name="When User navigates to Personal Details">
+<kw name="Navigate To Personal Details" owner="PersonalDetailsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:17.133422" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>${MY_INFO_MENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:51:17.132711" elapsed="7.690237"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LOADER}</arg>
+<arg>25s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-02-21T15:51:24.823960" elapsed="15.440238"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:51:40.264830" elapsed="0.028776"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:17.132043" elapsed="23.161740"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:17.131144" elapsed="23.162746"/>
+</kw>
+<kw name="And User updates first name with valid value">
+<kw name="Update First Name" owner="PersonalDetailsPage">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LOADER}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-02-21T15:51:40.296592" elapsed="5.053500"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.350656" elapsed="0.026188"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.377163" elapsed="0.297504"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:45.675492" level="INFO">Clicking element 'xpath://input[@name='firstName']'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.674923" elapsed="0.114635"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:45.839126" level="INFO">${current_value} = Bug</msg>
+<var>${current_value}</var>
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.791617" elapsed="0.047593"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-02-21T15:51:45.845577" level="INFO">Length is 3.</msg>
+<msg time="2026-02-21T15:51:45.845828" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.839475" elapsed="0.006414"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:45.847234" level="INFO">Sending key(s) ('BACKSPACE',) to xpath://input[@name='firstName'] element.</msg>
+<msg time="2026-02-21T15:51:46.134785" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg time="2026-02-21T15:51:46.135141" level="INFO">Releasing special key BACKSPACE.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-21T15:51:45.846605" elapsed="0.314432"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-02-21T15:51:45.846373" elapsed="0.314774"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:46.162064" level="INFO">Sending key(s) ('BACKSPACE',) to xpath://input[@name='firstName'] element.</msg>
+<msg time="2026-02-21T15:51:46.452878" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg time="2026-02-21T15:51:46.452999" level="INFO">Releasing special key BACKSPACE.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-21T15:51:46.161574" elapsed="0.307328"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-02-21T15:51:46.161377" elapsed="0.307661"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:46.470057" level="INFO">Sending key(s) ('BACKSPACE',) to xpath://input[@name='firstName'] element.</msg>
+<msg time="2026-02-21T15:51:46.761726" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg time="2026-02-21T15:51:46.761846" level="INFO">Releasing special key BACKSPACE.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-21T15:51:46.469496" elapsed="0.319994"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-02-21T15:51:46.469269" elapsed="0.320477"/>
+</iter>
+<var>${i}</var>
+<value>${length}</value>
+<status status="PASS" start="2026-02-21T15:51:45.846055" elapsed="0.943844"/>
+</for>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:46.791036" level="INFO">Typing text 'Teju' into text field 'xpath://input[@name='firstName']'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${new_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:51:46.790299" elapsed="0.116174"/>
+</kw>
+<arg>Teju</arg>
+<status status="PASS" start="2026-02-21T15:51:40.295642" elapsed="6.611161"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:40.294578" elapsed="6.612438"/>
+</kw>
+<kw name="And User clicks save button">
+<kw name="Click Save" owner="PersonalDetailsPage">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${LOADER}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-02-21T15:51:46.909827" elapsed="5.045982"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${SAVE_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-02-21T15:51:51.956661" elapsed="0.054339"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SAVE_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-21T15:51:52.011359" elapsed="0.291771"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:52.304622" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:51:52.303687" elapsed="0.177831"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:46.908787" elapsed="5.572970"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:46.907764" elapsed="5.574114"/>
+</kw>
+<kw name="Then First name should be updated">
+<kw name="Verify First Name Updated" owner="PersonalDetailsPage">
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:51:52.521622" level="INFO">Content of text field 'xpath://input[@name='firstName']' is 'Teju'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${new_name}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2026-02-21T15:51:52.483483" elapsed="0.038270"/>
+</kw>
+<arg>Teju</arg>
+<status status="PASS" start="2026-02-21T15:51:52.482970" elapsed="0.038936"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:52.482509" elapsed="0.039507"/>
+</kw>
+<kw name="And Employee ID field should be disabled">
+<kw name="Verify Employee ID Disabled">
+<msg time="2026-02-21T15:51:52.527742" level="FAIL">No keyword with name 'Verify Employee ID Disabled' found.</msg>
+<status status="FAIL" start="2026-02-21T15:51:52.527639" elapsed="0.000197">No keyword with name 'Verify Employee ID Disabled' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-21T15:51:52.522529" elapsed="0.005549">No keyword with name 'Verify Employee ID Disabled' found.</status>
+</kw>
+<kw name="Close Browser Session" owner="common_keyword" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-21T15:51:52.529265" elapsed="2.655302"/>
+</kw>
+<status status="PASS" start="2026-02-21T15:51:52.528789" elapsed="2.656071"/>
+</kw>
+<status status="FAIL" start="2026-02-21T15:50:20.708836" elapsed="94.476433">No keyword with name 'Verify Employee ID Disabled' found.</status>
+</test>
+<status status="FAIL" start="2026-02-21T15:50:19.066790" elapsed="96.120855"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Personaldetails" id="s1" pass="0" fail="1" skip="0">Personaldetails</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

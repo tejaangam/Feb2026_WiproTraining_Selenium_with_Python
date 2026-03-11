@@ -1,0 +1,23 @@
+
+https://amazon.in/mobiles/samasung - URL unified resource locator
+mobile - resource
+amazon.in - domian name
+https - protcool
+mobiles/samasung  - path parameters - path where the resource location is in the server
+query parameters ?=lion + africa\
+
+
+status codes:
+1xx : informational code
+2xx : successfull
+
+Negative validation:
+1.response content text,
+2.status code validation
+3.should not be empty
+null data - data 4.validation - presence of the objects attributes and values properly
+5. specfic data presence
+6.wrong data
+email - abc@abc.com
+agdghdjdj
+id - no value to id

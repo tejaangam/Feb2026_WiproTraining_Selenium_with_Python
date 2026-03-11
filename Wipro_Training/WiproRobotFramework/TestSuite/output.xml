@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-18T15:09:00.273710" rpa="false" schemaversion="5">
+<suite id="s1" name="SuiteLevelIST" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\TestSuite\SuiteLevelIST.robot">
+<test id="s1-t1" name="Verify login with valid credentials" line="10">
+<kw name="open db" owner="Resources" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.034559" level="INFO">opening the db</msg>
+<arg>opening the db</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.033764" elapsed="0.000982"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.031415" elapsed="0.006770"/>
+</kw>
+<kw name="Login" owner="Resources">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.041604" level="INFO">Enter username</msg>
+<arg>Enter username</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.040879" elapsed="0.000877"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.042913" level="INFO">Enter password</msg>
+<arg>Enter password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.042135" elapsed="0.001004"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.047433" level="INFO">click on login button</msg>
+<arg>click on login button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.043541" elapsed="0.004082"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.048899" level="INFO">user is on the home page</msg>
+<arg>user is on the home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.048070" elapsed="0.001020"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.040123" elapsed="0.009215"/>
+</kw>
+<kw name="close db" owner="Resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.051831" level="INFO">Closing the db</msg>
+<arg>Closing the db</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.050887" elapsed="0.001107"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.050280" elapsed="0.002576"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.029858" elapsed="0.023774"/>
+</test>
+<test id="s1-t2" name="Verify Add to cart functionality" line="12">
+<kw name="open db" owner="Resources" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.063313" level="INFO">opening the db</msg>
+<arg>opening the db</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.062172" elapsed="0.001306"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.060996" elapsed="0.002735"/>
+</kw>
+<kw name="Login" owner="Resources">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.069432" level="INFO">Enter username</msg>
+<arg>Enter username</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.068777" elapsed="0.000844"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.071510" level="INFO">Enter password</msg>
+<arg>Enter password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.070093" elapsed="0.001693"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.073405" level="INFO">click on login button</msg>
+<arg>click on login button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.072446" elapsed="0.001137"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.075452" level="INFO">user is on the home page</msg>
+<arg>user is on the home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.073951" elapsed="0.005809"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.066173" elapsed="0.013916"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.083671" level="INFO">User selects the product</msg>
+<arg>User selects the product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.080909" elapsed="0.002912"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.086693" level="INFO">User adds the product to the cart</msg>
+<arg>User adds the product to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.085810" elapsed="0.001280"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.090051" level="INFO">User verifies that the product with details is added to the cart</msg>
+<arg>User verifies that the product with details is added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.089174" elapsed="0.001041"/>
+</kw>
+<kw name="close db" owner="Resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T15:09:02.101621" level="INFO">Closing the db</msg>
+<arg>Closing the db</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T15:09:02.099785" elapsed="0.002203"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.094125" elapsed="0.008128"/>
+</kw>
+<status status="PASS" start="2026-02-18T15:09:02.054858" elapsed="0.051223"/>
+</test>
+<status status="PASS" start="2026-02-18T15:09:00.279857" elapsed="1.854243"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="SuiteLevelIST" id="s1" pass="2" fail="0" skip="0">SuiteLevelIST</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

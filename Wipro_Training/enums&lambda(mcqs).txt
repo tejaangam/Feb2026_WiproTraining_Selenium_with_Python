@@ -1,0 +1,315 @@
+1. What is the main purpose of enumerate() in Python?
+A. To generate random numbers
+B. To iterate with both index and value
+C. To sort elements
+D. To filter values
+ANS:B
+
+2. Which of the following does enumerate() return?
+A. List
+B. Tuple
+C. enumerate object
+D. Dictionary
+ANS:D Ans:B
+
+3. What is the default starting index of enumerate()?
+A. 1
+B. -1
+C. None
+D. 0
+ANS:D
+
+4. Which syntax is correct for enumerate()?
+A. enumerate(start, iterable)
+B. enumerate(iterable, start)
+C. enumerate(iterable)
+D. Both B and C
+ANS:D
+
+5. Which of the following iterables can be used with enumerate()?
+A. List
+B. Tuple
+C. String
+D. All of the above
+ANS:D
+
+6. What will list(enumerate(['a', 'b'])) produce?
+A. List of strings
+B. List of indexes
+C. List of tuples
+D. Dictionary
+ANS:B ans:C
+
+7. Which of the following is the most Pythonic way to loop with index?
+A. for i in range(len(data))
+B. for i, v in enumerate(data)
+C. for i in data
+D. for v in index(data)
+ANS:B
+
+8. Can enumerate() be used with files?
+A. No
+B. Only with lists
+C. Only with tuples
+D. Yes
+ANS:D
+
+9. What is the type of each item produced by enumerate()?
+A. List
+B. Dictionary
+C. Tuple
+D. Set
+ANS:B wrong ans:C
+
+10. Which keyword is commonly used to unpack enumerate() values?
+A. key, value
+B. index, value
+C. count, element
+D. All of the above
+ANS:B
+
+11. What does the start parameter in enumerate() do?
+A. Stops iteration
+B. Changes step size
+C. Sets the starting index
+D. Limits the range
+ANS:C
+
+12. Which of the following is TRUE about enumerate()?
+A. It modifies the original iterable
+B. It consumes high memory
+C. It provides index automatically
+D. It works only on lists
+ANS:C
+
+13. What happens if start is set to 5 in enumerate()?
+A. Indexing starts from 0
+B. Indexing starts from 5
+C. It raises an error
+D. It skips first 5 elements
+ANS:C wrong ans:B
+
+14. Which loop is best for printing line numbers from a file?
+A. for line in file
+B. for i in range(file)
+C. for i, line in enumerate(file)
+D. for i in len(file)
+ANS:C
+
+15. enumerate() is mainly used to replace which pattern?
+A. for x in list
+B. for i in range(len(list))
+C. while loop
+D. recursion
+ANS:B
+
+
+***************************
+LAMBDA:
+1. What will be the output of the following code?
+print(list(map(lambda x: x + x, [1, 2, 3])))
+ 
+ 
+A. [1, 2, 3]
+B. [2, 4, 6]
+C. [1, 4, 9]
+D. Error
+ANS:B
+ 
+2. What does the following code return?
+print(list(filter(lambda x: x, [0, 1, False, True, 2])))
+
+A. [0, 1, False, True, 2]
+B. [1, True, 2]
+C. [0, False]
+D. Error
+ANS:B(NA)
+
+3. Which of the following lambda functions is INVALID?
+ 
+A. lambda x: x * 2
+B. lambda x, y: x + y
+C. lambda x: x if x > 0 else -x
+D. lambda x: return x * 2
+ANS:D
+
+4. What will be the output?
+nums = [1, 2, 3, 4]
+print(list(map(lambda x: x % 2 == 0, nums)))
+ 
+A. [2, 4]
+B. [False, True, False, True]
+C. [True, False]
+D. Error
+ANS:A wrong | ans:B
+
+5. What happens if filter() receives a lambda that returns non-boolean values?
+ 
+A. Raises TypeError
+B. Only True is allowed
+C. Non-zero / non-empty values are treated as True
+D. Code will not execute
+ANS:A
+
+6. What will be printed?
+from functools import reduce
+print(reduce(lambda x, y: x * y, [1, 2, 3, 4], 2))
+ 
+A. 24
+B. 48
+C. 12
+D. Error
+ANS:48
+ 
+7. What is the output?
+print(list(filter(lambda x: x > 2, map(lambda x: x + 1, [1, 2, 3])))) 
+A. [2, 3, 4]
+B. [3, 4]
+C. [4]
+D. []
+ANS:B
+
+8. Which statement about map() and filter() is TRUE?
+ 
+A. They return lists by default
+B. They modify the original iterable
+C. They return iterator objects
+D. They work only with lambda
+ANS:D
+ 
+9. What will be the output?
+print(list(map(lambda x: x.upper(), filter(lambda x: x.islower(), "PyThOn"))))
+ 
+A. ['P', 'Y', 'T', 'H', 'O', 'N']
+B. ['y', 'h', 'n']
+C. ['Y', 'H', 'N']
+D. Error
+ANS:C
+ 
+10. Which of the following best describes reduce()?
+ 
+A. Filters values
+B. Maps one-to-one
+C. Aggregates iterable into single value
+D. Sorts elements
+ANS:C
+ 
+11. What will be the output?
+print(list(map(lambda x: x[0], ["python", "java", "c++"])))
+
+A. ['p', 'j', 'c']
+B. ['python', 'java', 'c++']
+C. ['n', 'a', '+']
+D. Error
+ANS:A
+ 
+12. Which scenario is BEST suited for filter()?
+ 
+A. Doubling all values
+B. Converting data types
+C. Selecting values based on condition
+D. Merging elements
+ANS:C
+ 
+13. What is the output?
+nums = [1, 2, 3]
+f = map(lambda x: x * 2, nums)
+nums.append(4)
+print(list(f))
+ 
+A. [2, 4, 6]
+B. [2, 4, 6, 8]
+C. Error
+D. [2, 4]
+ANS:B
+ 
+14. Which of the following is NOT a valid use case for lambda?
+ 
+A. Sorting keys
+B. Complex multi-line logic
+C. Short one-time functions
+D. Inline transformations
+ANS:D
+ 
+15. What will be the output?
+print(list(filter(None, [0, "", None, 5, "Hi"])))
+ 
+A. [0, "", None]
+B. [5, 'Hi']
+C. ['', 'Hi']
+D. Error
+ANS:A 
+
+***********************
+LIST, SET, DICT
+1. Which of the following data types allows duplicate elements?
+A. Set
+B. Dictionary keys
+C. List
+D. All of the above
+ANS: D
+
+2. Which collection is unordered and does not allow duplicate values?
+A. List
+B. Tuple
+C. Dictionary
+D. Set
+ANS:B
+
+3. What is the output type of {} in Python?
+A. List
+B. Set
+C. Dictionary
+D. Tuple
+ANS:C
+
+4. Which of the following allows access using a key?
+A. List
+B. Set
+C. Dictionary
+D. Tuple
+ANS:C
+
+5. Which operation is NOT supported by sets?
+A. Union
+B. Intersection
+C. Indexing
+D. Difference
+ANS:C
+
+6. Which data structure is best suited for fast lookups?
+A. List
+B. Set
+C. Dictionary
+D. Tuple
+ANS:C
+
+7. What will be the output?
+a = [1, 2, 2, 3]print(len(a))
+A. 3
+B. 4
+C. Error
+D. 2
+ANS:B
+
+8. What will be the output?
+s = {1, 2, 2, 3}print(len(s))
+A. 4
+B. 3
+C. 2
+D. Error
+ANS:B
+
+9. Which of the following is mutable?
+A. List
+B. Dictionary
+C. Set
+D. All of the above
+ANS:D
+
+10. Which data type stores elements as key–value pairs?
+A. List
+B. Tuple
+C. Set
+D. Dictionary
+ANS:D

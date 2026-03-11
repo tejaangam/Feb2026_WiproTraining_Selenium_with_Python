@@ -1,0 +1,101 @@
+What is the output?
+
+import re
+print(re.findall(r"\d*", "ab12cd3"))
+A) ['12', '3']
+B) ['', '', '12', '', '3', '']
+C) ['', '', '12', '', '', '3', '']
+D) ['12', '', '3']
+ANS:A WRONG | ANS:C
+
+What does this return?
+re.findall(r"^ab", "ab\nabc\nab", re.M)
+A) ['ab']
+B) ['ab', 'ab']
+C) ['ab', 'abc', 'ab']
+D) []
+ANS:A WRONG | ANS:B
+
+What is the output?
+re.findall(r"[A-Z]+", "PyTHon IS Fun") 
+A) ['P', 'TH', 'IS', 'F']
+B) ['TH', 'IS', 'F']
+C) ['P', 'TH', 'IS', 'F', 'F']
+D) ['P', 'T', 'H', 'I', 'S', 'F'
+ANS: D WRONG |ANS:A
+
+What will this print?
+re.findall(r"(ha){2,3}", "hahaha haha hahahaha")
+A) ['hahaha', 'haha', 'hahaha']
+B) ['ha', 'ha', 'ha']
+C) ['ha', 'ha']
+D) ['ha', 'ha', 'ha', 'ha']
+ANS:A WRONG| ANS:B
+
+What is the output?
+re.findall(r"\b\w{4}\b", "This test code runs well")
+A) ['This', 'test', 'code', 'runs', 'well']
+B) ['This', 'test', 'code', 'runs']
+C) ['This', 'code', 'runs']
+D) ['well']
+ANS:A
+
+What happens here?
+re.findall(r".+?", "abc")
+A) ['abc']
+B) ['a', 'b', 'c']
+C) ['a', 'bc']
+D) ['abc', '']
+(Hint: Non-greedy quantifier)
+ANS:B
+
+What is the output?
+re.findall(r"\w+\B", "cat scatter dog")
+A) ['cat', 'scatter', 'dog']
+B) ['sca', 'scatte']
+C) ['sca', 'scatte', 'do']
+D) ['scatte']
+ANS:A WRONG | B
+
+What will this return?
+re.findall(r"(ab|cd)+", "ab cd abab cdcd") 
+A) ['ab', 'cd', 'abab', 'cdcd']
+B) ['ab', 'cd', 'ab', 'cd']
+C) ['ab', 'cd', 'ab', 'ab', 'cd', 'cd']
+D) ['abab', 'cdcd']
+ANS:A WRONG | ANS: B								Meta-character  Meaning
+    										.   Any character
+										^   Start of string
+										$   End of string
+										*   0 or more
+										+   1 or more
+										?   0 or 1
+										{n} Exactly n times
+										{n,}    n or more
+										{n,m}   Between n and m
+										[]  Character set
+										()  Grouping
+										^ → Start of string
+										$ → End of string
+										b → Word boundary
+										B → Not word boundary
+										(?=...) → Positive Lookahead
+										(?!...) → Negative Lookahead
+										(?<=...) → Positive Lookbehind
+										(?<!...) → Negative Lookbehind
+What is the result?
+re.findall(r"\Acat", "cat\ncat")
+A) ['cat']
+B) ['cat', 'cat']
+C) []
+D) Error
+(Hint: \A vs ^)
+ANS:NOT understand (A)
+ 
+What happens here?
+re.findall(r"(?<!\d)\d{2}", "123 45 6 789")
+A) ['12', '45', '78']
+B) ['23', '45', '89']
+C) ['45', '78']
+D) ['23', '45']
+ANS:NOT understand (A)

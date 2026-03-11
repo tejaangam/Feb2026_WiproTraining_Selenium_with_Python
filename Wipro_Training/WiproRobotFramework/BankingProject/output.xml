@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-26T12:13:27.287083" rpa="false" schemaversion="5">
+<suite id="s1" name="Banking" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\BankingProject\banking.robot">
+<test id="s1-t1" name="Login As Bank Manager" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:28.715239" level="INFO">Opening browser 'chrome' to base url 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T12:13:28.714110" elapsed="14.131861"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-26T12:13:42.853570" elapsed="0.092871"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:42.963980" level="INFO">Clicking element 'xpath://button[text()='Bank Manager Login']'.</msg>
+<msg time="2026-02-26T12:13:43.406764" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:43.407352" level="FAIL">Element with locator 'xpath://button[text()='Bank Manager Login']' not found.</msg>
+<arg>xpath://button[text()='Bank Manager Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:42.947376" elapsed="0.475730">Element with locator 'xpath://button[text()='Bank Manager Login']' not found.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Add Customer</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.423560" elapsed="0.000064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.423993" elapsed="0.000060"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:28.712125" elapsed="14.712343">Element with locator 'xpath://button[text()='Bank Manager Login']' not found.</status>
+</test>
+<test id="s1-t2" name="Add Customer" line="21">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:43.426298" level="INFO">Clicking element 'xpath://button[text()='Add Customer']'.</msg>
+<msg time="2026-02-26T12:13:43.765229" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:43.765489" level="FAIL">Element with locator 'xpath://button[text()='Add Customer']' not found.</msg>
+<arg>xpath://button[text()='Add Customer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:43.425950" elapsed="0.341482">Element with locator 'xpath://button[text()='Add Customer']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='First Name']</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.768063" elapsed="0.000152"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Last Name']</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.768807" elapsed="0.000129"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Post Code']</arg>
+<arg>${POSTCODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.769516" elapsed="0.000121"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Add Customer']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.770298" elapsed="0.000093"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:43.770866" elapsed="0.000071"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:43.425374" elapsed="0.346085">Element with locator 'xpath://button[text()='Add Customer']' not found.</status>
+</test>
+<test id="s1-t3" name="Open Account" line="29">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:43.776461" level="INFO">Clicking element 'xpath://button[text()='Open Account']'.</msg>
+<msg time="2026-02-26T12:13:43.998783" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:43.999060" level="FAIL">Element with locator 'xpath://button[text()='Open Account']' not found.</msg>
+<arg>xpath://button[text()='Open Account']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:43.776076" elapsed="0.226631">Element with locator 'xpath://button[text()='Open Account']' not found.</status>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=userSelect</arg>
+<arg>${FIRSTNAME} ${LASTNAME}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:44.004754" elapsed="0.000116"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>id=currency</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:44.006265" elapsed="0.000106"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Process']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:44.032578" elapsed="0.000126"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:44.033886" elapsed="0.000106"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:43.775129" elapsed="0.269445">Element with locator 'xpath://button[text()='Open Account']' not found.</status>
+</test>
+<test id="s1-t4" name="Deposit Money" line="36">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:44.071749" level="INFO">Clicking element 'xpath://button[text()='Home']'.</msg>
+<arg>xpath://button[text()='Home']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T12:13:44.071306" elapsed="0.474117"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:44.564699" level="INFO">Clicking element 'xpath://button[text()='Customer Login']'.</msg>
+<arg>xpath://button[text()='Customer Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T12:13:44.564183" elapsed="0.281398"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:44.904098" level="INFO">Selecting options from selection list 'id=userSelect' by label Teju Kumar.</msg>
+<msg time="2026-02-26T12:13:45.163524" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:45.163836" level="FAIL">List with locator 'id=userSelect' not found.</msg>
+<arg>id=userSelect</arg>
+<arg>${FIRSTNAME} ${LASTNAME}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:44.900050" elapsed="0.271872">List with locator 'id=userSelect' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.174203" elapsed="0.000149"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Deposit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.174836" elapsed="0.000091"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='amount']</arg>
+<arg>${DEPOSIT_AMOUNT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.175451" elapsed="0.000098"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Deposit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.176513" elapsed="0.000128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.177154" elapsed="0.000087"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:44.067305" elapsed="1.111936">List with locator 'id=userSelect' not found.</status>
+</test>
+<test id="s1-t5" name="Withdraw Money" line="46">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:45.183224" level="INFO">Clicking element 'xpath://button[text()='Withdrawl']'.</msg>
+<msg time="2026-02-26T12:13:45.627599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:45.627915" level="FAIL">Element with locator 'xpath://button[text()='Withdrawl']' not found.</msg>
+<arg>xpath://button[text()='Withdrawl']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:45.182676" elapsed="0.451025">Element with locator 'xpath://button[text()='Withdrawl']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='amount']</arg>
+<arg>${WITHDRAW_AMOUNT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.644051" elapsed="0.000117"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[text()='Withdraw']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.649094" elapsed="0.000318"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.652582" elapsed="0.000143"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:45.181871" elapsed="0.473514">Element with locator 'xpath://button[text()='Withdrawl']' not found.</status>
+</test>
+<test id="s1-t6" name="Validate Balance" line="51">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T12:13:45.926398" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T12:13:45.926833" level="FAIL">Element with locator 'xpath://strong[contains(@class,'ng-binding')]' not found.</msg>
+<var>${balance}</var>
+<arg>xpath://strong[contains(@class,'ng-binding')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T12:13:45.663651" elapsed="0.268697">Element with locator 'xpath://strong[contains(@class,'ng-binding')]' not found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Current Balance: ${balance}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.933103" elapsed="0.000096"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${balance}</arg>
+<arg>500</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.933649" elapsed="0.000116"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-26T12:13:45.934965" elapsed="0.000094"/>
+</kw>
+<status status="FAIL" start="2026-02-26T12:13:45.662067" elapsed="0.273507">Element with locator 'xpath://strong[contains(@class,'ng-binding')]' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-26T12:13:27.299516" elapsed="18.637605"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Banking" id="s1" pass="0" fail="6" skip="0">Banking</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

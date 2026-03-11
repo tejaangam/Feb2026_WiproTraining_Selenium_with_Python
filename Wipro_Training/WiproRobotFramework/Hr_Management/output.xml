@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-21T14:21:52.532787" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\test">
+<suite id="s1-s1" name="Login Tests" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\test\login_tests.robot">
+<kw name="Open Browser To Login Page" owner="common_keyword" type="SETUP">
+<kw name="Open Browser">
+<msg time="2026-02-21T14:21:52.877566" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="FAIL" start="2026-02-21T14:21:52.877488" elapsed="0.000187">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2026-02-21T14:21:52.878864" elapsed="0.000051"/>
+</kw>
+<kw name="Set Selenium Implicit Wait">
+<arg>5</arg>
+<status status="NOT RUN" start="2026-02-21T14:21:52.879112" elapsed="0.000048"/>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.873532" elapsed="0.005926">No keyword with name 'Open Browser' found.</status>
+</kw>
+<test id="s1-s1-t1" name="TC_01 Verify Successful Employee Login" line="8">
+<doc>Verify successful login with valid credentials</doc>
+<status status="FAIL" start="2026-02-21T14:21:52.879637" elapsed="0.001772">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s1-t2" name="TC_02 Verify Unsuccessful Employee Login" line="15">
+<doc>Verify error message for invalid password</doc>
+<status status="FAIL" start="2026-02-21T14:21:52.883516" elapsed="0.001491">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<kw name="Close Browser Session" owner="common_keyword" type="TEARDOWN">
+<kw name="Close Browser">
+<msg time="2026-02-21T14:21:52.890529" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2026-02-21T14:21:52.890409" elapsed="0.000238">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.887555" elapsed="0.003321">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.839352" elapsed="0.051683">Suite setup failed:
+No keyword with name 'Open Browser' found.
+
+Also suite teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</suite>
+<suite id="s1-s2" name="Personaldetails" source="C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\test\personaldetails.robot">
+<test id="s1-s2-t1" name="TC_03 Modify First Name With Valid Data" line="9">
+<kw name="Open Browser To Login Page" owner="common_keyword" type="SETUP">
+<kw name="Open Browser">
+<msg time="2026-02-21T14:21:52.933218" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="FAIL" start="2026-02-21T14:21:52.933112" elapsed="0.000216">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2026-02-21T14:21:52.933655" elapsed="0.000050"/>
+</kw>
+<kw name="Set Selenium Implicit Wait">
+<arg>5</arg>
+<status status="NOT RUN" start="2026-02-21T14:21:52.933933" elapsed="0.000047"/>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.930692" elapsed="0.003590">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Close Browser Session" owner="common_keyword" type="TEARDOWN">
+<kw name="Close Browser">
+<msg time="2026-02-21T14:21:52.938642" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2026-02-21T14:21:52.938508" elapsed="0.000245">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.935179" elapsed="0.003802">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-21T14:21:52.929652" elapsed="0.009883">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<status status="FAIL" start="2026-02-21T14:21:52.895149" elapsed="0.045716"/>
+</suite>
+<status status="FAIL" start="2026-02-21T14:21:52.543132" elapsed="0.400342"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="0" fail="3" skip="0">Test</stat>
+<stat name="Login Tests" id="s1-s1" pass="0" fail="2" skip="0">Test.Login Tests</stat>
+<stat name="Personaldetails" id="s1-s2" pass="0" fail="1" skip="0">Test.Personaldetails</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-21T14:21:52.849480" level="ERROR">Error in file 'C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\resources\common_keyword.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\robot.exe
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\python313.zip
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hp\AppData\Local\Programs\Python\Python313
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Lib\site-packages</msg>
+<msg time="2026-02-21T14:21:52.870752" level="ERROR">Error in file 'C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\pages\LoginPage.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\robot.exe
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\python313.zip
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hp\AppData\Local\Programs\Python\Python313
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Lib\site-packages</msg>
+<msg time="2026-02-21T14:21:52.903289" level="ERROR">Error in file 'C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\resources\common_keyword.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\robot.exe
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\python313.zip
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hp\AppData\Local\Programs\Python\Python313
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Lib\site-packages</msg>
+<msg time="2026-02-21T14:21:52.914573" level="ERROR">Error in file 'C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\pages\LoginPage.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\robot.exe
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\python313.zip
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hp\AppData\Local\Programs\Python\Python313
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Lib\site-packages</msg>
+<msg time="2026-02-21T14:21:52.927611" level="ERROR">Error in file 'C:\Users\hp\Wipro_Training\WiproRobotFramework\Hr_management\pages\PersonalDetailsPage.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\robot.exe
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Scripts\python313.zip
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\hp\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\hp\AppData\Local\Programs\Python\Python313
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv
+  C:\Users\hp\Wipro_Training\WiproRobotFramework\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

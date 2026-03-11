@@ -1,0 +1,16 @@
+OrderID,Date,Region,Product,Category,Quantity,Price
+1001,2025-01-05,East,Laptop,Electronics,2,50000
+1002,2025-01-12,West,Phone,Electronics,3,20000
+1003,2025-02-03,North,Tablet,Electronics,1,30000
+1004,2025-02-18,South,Monitor,Accessories,4,15000
+1005,2025-03-02,East,Laptop,Electronics,3,50000
+1006,2025-03-15,West,Phone,Electronics,2,20000
+1007,2025-04-01,North,Tablet,Electronics,5,30000
+1008,2025-04-12,South,Monitor,Accessories,2,15000
+1009,2025-05-05,East,Laptop,Electronics,4,50000
+1010,2025-05-18,West,Phone,Electronics,1,20000
+1011,2025-06-02,North,Tablet,Electronics,3,30000
+1012,2025-06-20,South,Monitor,Accessories,2,15000
+1013,2025-07-04,East,Laptop,Electronics,2,50000
+1014,2025-07-19,West,Phone,Electronics,3,20000
+1015,2025-08-10,North,Tablet,Electronics,4,30000

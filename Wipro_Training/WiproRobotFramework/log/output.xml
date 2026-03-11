@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-18T14:42:59.285789" rpa="false" schemaversion="5">
+<suite id="s1" name="KeywordsFromRes" source="C:\Users\hp\PycharmProjects\WiproRobotFramework\TestSuite\KeywordsFromRes.robot">
+<test id="s1-t1" name="Verify login with valid credentials" line="7">
+<kw name="Login">
+<msg time="2026-02-18T14:43:04.546886" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
+<status status="FAIL" start="2026-02-18T14:43:04.545739" elapsed="0.002628">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
+</kw>
+<status status="FAIL" start="2026-02-18T14:43:04.540016" elapsed="0.009209">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
+</test>
+<test id="s1-t2" name="Verify Add to cart functionality" line="9">
+<kw name="Login">
+<msg time="2026-02-18T14:43:04.561501" level="FAIL">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</msg>
+<status status="FAIL" start="2026-02-18T14:43:04.560772" elapsed="0.001253">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>User selects the product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T14:43:04.562659" elapsed="0.000342"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>User adds the product to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T14:43:04.564322" elapsed="0.000355"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>User verifies that the product with details is added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T14:43:04.565327" elapsed="0.000914"/>
+</kw>
+<status status="FAIL" start="2026-02-18T14:43:04.551665" elapsed="0.015603">No keyword with name 'Login' found. Did you mean:
+    BuiltIn.Log
+    BuiltIn.Log Many</status>
+</test>
+<status status="FAIL" start="2026-02-18T14:43:00.202321" elapsed="4.368098"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="KeywordsFromRes" id="s1" pass="0" fail="2" skip="0">KeywordsFromRes</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-18T14:43:01.141005" level="ERROR">Error in file 'C:\Users\hp\PycharmProjects\WiproRobotFramework\TestSuite\KeywordsFromRes.robot' on line 3: Error in file 'C:\Users\hp\PycharmProjects\WiproRobotFramework\TestSuite\Keywords.robot' on line 5: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>

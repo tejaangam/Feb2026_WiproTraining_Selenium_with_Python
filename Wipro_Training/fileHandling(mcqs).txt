@@ -1,0 +1,143 @@
+1.What is the default delimiter used by Python’s csv.reader?
+A. |
+B. \t
+C. ,
+D. ;
+ANS: C
+
+2.Which mode is mandatory while opening a CSV file on Windows to avoid blank lines?
+A. "r"
+B. "rb"
+C. "r", newline=""
+D. "rt"
+ANS:A WRONG | ANS: C
+
+3.What does csv.DictReader return for each row?
+A. List
+B. Tuple
+C. Dictionary
+D. Set
+ANS:A WRONG |ANS: C
+
+4.If a CSV file has more columns than fieldnames passed to DictReader, what happens?
+A. Extra columns are ignored
+B. Raises ValueError
+C. Extra values are stored under key None
+D. File is not read
+ANS:C
+
+5.Which parameter is used to change the delimiter in csv.reader?
+A. separator
+B. split
+C. delimiter
+D. sep
+ANS:C
+
+6.Which object is returned by csv.writer()?
+A. File object
+B. Iterator
+C. Writer object with writerow() method
+D. Dictionary
+ANS: A WRONG |ANS: C
+
+7.What happens if writerow() receives a dictionary? 
+A. Values are written automatically
+B. Keys are written
+C. Raises TypeError
+D. Writes only values in random order
+ANS: A WRONG | ANS: C {IT EXPECTS THE LIST NOT A DICTIONARY}
+
+📗 XML Handling in Python (MCQs)
+8.Which module is most commonly used for basic XML parsing in Python?
+A. xml.dom
+B. lxml
+C. xml.etree.ElementTree
+D. BeautifulSoup
+ANS:C
+
+9.What does ElementTree.parse() return? 
+A. Root element
+B. XML string
+C. ElementTree object
+D. List of elements
+ANS: A WRONG | ANS: C 
+
+10.Which method returns the root element of an XML document?
+A. getRoot()
+B. root()
+C. getroot()
+D. findroot()
+ANS: C
+
+11.What is the output type of element.text? 
+A. List
+B. String
+C. XML object
+D. Dictionary
+ANS:C WRONG | ANS: B
+
+12.If an XML tag is self-closing, what is element.text?
+A. Empty string
+B. None
+C. Raises error
+D. " "
+ANS:B
+
+13.Which method finds only the first matching child? 
+A. findall()
+B. find()
+C. iter()
+D. getchildren()
+ANS: B
+
+14.How are attributes of an XML element accessed? 
+A. element.attribute
+B. element.attrib
+C. element.getAttribute()
+D. element.attrs()
+ANS:B
+
+📙 JSON Handling in Python (MCQs)
+15.Which Python type does a JSON object map to? 
+A. List
+B. Tuple
+C. Dictionary
+D. Set
+ANS:C
+
+16.What is the difference between json.load() and json.loads()?
+ 
+A. Both are same
+B. load() reads string, loads() reads file
+C. load() reads file, loads() reads string
+D. Both read only files
+ANS: D WRONG | ANS: C 
+ 
+17.Which of the following is NOT JSON serializable by default?
+A. List
+B. Dictionary
+C. Tuple
+D. Set
+ANS: C WRONG | ANS: D
+
+18.What will json.dumps() return?
+ 
+A. Python dictionary
+B. JSON file
+C. JSON string
+D. Byte object
+ANS: A WRONG | ANS:C {The s in dumps stands for string; it returns a JSON string)}
+
+19.Which parameter makes JSON output human-readable? 
+A. sort_keys
+B. indent
+C. pretty
+D. spacing
+ANS: A WRONG | ANS: B (The indent parameter adds whitespace to make it readable)
+ 
+20.If a JSON key is duplicated, what happens during parsing?
+A. Raises error
+B. Both values stored
+C. Last value overwrites previous
+D. First value retained
+ANS: B WRONG | ANS: C (In Python's json module, the last value for a key will overwrite any previous ones)

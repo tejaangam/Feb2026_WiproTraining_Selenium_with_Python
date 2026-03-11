@@ -1,0 +1,25 @@
+##TEMPLATE
+def solve(input):
+    result = 0   # or "" or []
+    
+    for item in input:
+        if condition:
+            result += 1
+
+    return result
+
+⭐ Very Important Inheritance Concepts Summary
+Concept		Key Point
+Single		One parent
+Multiple	Multiple parents
+Multilevel	Chain inheritance
+Hierarchical	One parent, many children
+super()		Call parent
+MRO		Left to right search
+
+🔥 Final Inheritance Summary (Lock This in Mind)
+Child searched first for methods.
+Parent constructor runs automatically only if child does not define one.
+If child defines constructor → must use super() to call parent.
+MRO follows left-to-right order.
+Overriding replaces parent method unless super() is used.

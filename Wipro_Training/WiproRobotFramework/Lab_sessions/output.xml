@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-18T12:41:39.829497" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab" source="C:\Users\hp\PycharmProjects\WiproRobotFramework\Lab_sessions\Lab.robot">
+<test id="s1-t1" name="My Test cases" line="27">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-02-18T12:41:40.896250" level="INFO">${sum} = 9</msg>
+<var>${sum}</var>
+<arg>${number1} + ${number2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.894616" elapsed="0.002273"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.898873" elapsed="0.001274"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sum}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.900799" elapsed="0.000998"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>I am from ${CITY}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.903570" elapsed="0.000709"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Before update: ${CITY}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.904684" elapsed="0.000602"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-18T12:41:40.906128" level="INFO">${CITY} = Chennai</msg>
+<var>${CITY}</var>
+<arg>Chennai</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.905662" elapsed="0.000538"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>After update: ${CITY}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.906600" elapsed="0.000812"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUITS}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.908031" elapsed="0.001463"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.911719" elapsed="0.001184"/>
+</kw>
+<var name="${fruit}">mango</var>
+<status status="PASS" start="2026-02-18T12:41:40.911265" elapsed="0.001867"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.913756" elapsed="0.001051"/>
+</kw>
+<var name="${fruit}">banana</var>
+<status status="PASS" start="2026-02-18T12:41:40.913494" elapsed="0.001627"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruit}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.916041" elapsed="0.001285"/>
+</kw>
+<var name="${fruit}">apple</var>
+<status status="PASS" start="2026-02-18T12:41:40.915647" elapsed="0.001899"/>
+</iter>
+<var>${fruit}</var>
+<value>@{FRUITS}</value>
+<status status="PASS" start="2026-02-18T12:41:40.910094" elapsed="0.007610"/>
+</for>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-02-18T12:41:40.921000" level="INFO">Length is 3.</msg>
+<msg time="2026-02-18T12:41:40.921554" level="INFO">${length} = 3</msg>
+<var>${length}</var>
+<arg>${FRUITS}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.920015" elapsed="0.001684"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${length}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T12:41:40.922565" elapsed="0.000990"/>
+</kw>
+<status status="PASS" start="2026-02-18T12:41:40.892988" elapsed="0.032167"/>
+</test>
+<status status="PASS" start="2026-02-18T12:41:39.834793" elapsed="1.096756"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab" id="s1" pass="1" fail="0" skip="0">Lab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
