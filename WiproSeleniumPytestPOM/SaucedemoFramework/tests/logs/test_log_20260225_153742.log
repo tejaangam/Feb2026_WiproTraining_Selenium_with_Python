@@ -1,0 +1,12 @@
+2026-02-25 15:37:42,135 - INFO - xdist worker is: gw2
+2026-02-25 15:37:42,136 - INFO - ====== WebDriver manager ======
+2026-02-25 15:37:46,948 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:37:48,241 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:37:49,525 - INFO - Driver [C:\Users\hp\.wdm\gw2\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 15:38:04,456 - INFO - xdist worker is: gw2
+2026-02-25 15:38:04,457 - INFO - ====== WebDriver manager ======
+2026-02-25 15:38:12,536 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:38:15,510 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 15:38:18,204 - INFO - Driver [C:\Users\hp\.wdm\gw2\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 15:38:36,085 - INFO - Starting login test for user: Admin
+2026-02-25 15:38:38,260 - INFO - Login failed as expected

@@ -1,0 +1,38 @@
+2026-02-25 16:03:06,285 - INFO - ====== WebDriver manager ======
+2026-02-25 16:03:20,730 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:03:22,420 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:03:23,473 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:03:40,142 - INFO - ====== WebDriver manager ======
+2026-02-25 16:03:43,031 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:03:44,282 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:03:45,699 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:04:31,465 - INFO - ====== WebDriver manager ======
+2026-02-25 16:04:36,982 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:04:38,175 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:04:39,325 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:04:47,556 - INFO - ====== WebDriver manager ======
+2026-02-25 16:04:50,693 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:04:52,175 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:04:53,261 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:05:00,611 - INFO - Starting login test for user: standard_user
+2026-02-25 16:05:02,228 - INFO - Login successful
+2026-02-25 16:05:16,452 - INFO - ====== WebDriver manager ======
+2026-02-25 16:05:18,983 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:05:19,887 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:05:20,735 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:05:27,729 - INFO - ====== WebDriver manager ======
+2026-02-25 16:05:30,605 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:05:31,435 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:05:32,240 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:05:37,754 - INFO - Starting login test for user: locked_out_user
+2026-02-25 16:05:38,674 - INFO - Login failed as expected
+2026-02-25 16:05:54,198 - INFO - ====== WebDriver manager ======
+2026-02-25 16:05:58,595 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:06:00,126 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:06:01,927 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:06:10,623 - INFO - ====== WebDriver manager ======
+2026-02-25 16:06:18,115 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:06:19,241 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-25 16:06:20,384 - INFO - Driver [C:\Users\hp\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-25 16:06:29,928 - INFO - Starting login test for user: problem_user
+2026-02-25 16:06:31,730 - INFO - Login failed as expected
